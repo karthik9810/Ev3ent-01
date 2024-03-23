@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campus Events Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab active" onclick="openTab(event, 'schedule')">Event Scheduling</button>
+      <button class="tab" onclick="openTab(event, 'registration')">Registration</button>
+      <button class="tab" onclick="openTab(event, 'ticketing')">Ticketing</button>
+      <button class="tab" onclick="openTab(event, 'promotion')">Promotion</button>
+      <button class="tab" onclick="openTab(event, 'attendees')">Attendees</button>
+      <button class="tab" onclick="openTab(event, 'analytics')">Analytics</button>
+      <button class="tab" onclick="openTab(event, 'feedback')">Feedback</button>
+    </div>
+
+    <div class="tab-content" id="schedule">
+      <!-- Content for Event Scheduling tab -->
+      <h2>Event Scheduling</h2>
+      <p>Content for Event Scheduling tab goes here.</p>
+    </div>
+
+    <div class="tab-content" id="registration">
+      <!-- Content for Registration tab -->
+      <h2>Registration</h2>
+      <p>Content for Registration tab goes here.</p>
+    </div>
+
+    <div class="tab-content" id="ticketing">
+      <!-- Content for Ticketing tab -->
+      <h2>Ticketing</h2>
+      <p>Content for Ticketing tab goes here.</p>
+    </div>
+
+    <div class="tab-content" id="promotion">
+      <!-- Content for Promotion tab -->
+      <h2>Promotion</h2>
+      <p>Content for Promotion tab goes here.</p>
+    </div>
+
+    <div class="tab-content" id="attendees">
+      <!-- Content for Attendees tab -->
+      <h2>Attendees</h2>
+      <p>Content for Attendees tab goes here.</p>
+    </div>
+
+    <div class="tab-content" id="analytics">
+      <!-- Content for Analytics tab -->
+      <h2>Analytics</h2>
+      <p>Content for Analytics tab goes here.</p>
+    </div>
+
+    <div class="tab-content" id="feedback">
+      <!-- Content for Feedback tab -->
+      <h2>Feedback</h2>
+      <p>Content for Feedback tab goes here.</p>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Create and Schedule Event</h2>
+    <form>
+      <div class="form-group">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" name="event-name" required>
+      </div>
+      <div class="form-group">
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required>
+      </div>
+      <div class="form-group">
+        <label for="event-time">Event Time:</label>
+        <input type="time" id="event-time" name="event-time" required>
+      </div>
+      <div class="form-group">
+        <label for="event-location">Event Location:</label>
+        <input type="text" id="event-location" name="event-location" required>
+      </div>
+      <div class="form-group">
+        <label for="event-duration">Event Duration (in hours):</label>
+        <input type="number" id="event-duration" name="event-duration" required>
+      </div>
+      <div class="form-group">
+        <label for="event-capacity">Event Capacity:</label>
+        <input type="number" id="event-capacity" name="event-capacity" required>
+      </div>
+      <button type="submit">Create Event</button>
+    </form>
+  </div>
+  <!-- event registration section -->
+  <div class="container">
+    <h2>Event Registration</h2>
+    <form>
+      <div class="form-group">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" name="event-name" required>
+      </div>
+      <div class="form-group">
+        <label for="ticket-type">Ticket Type:</label>
+        <select id="ticket-type" name="ticket-type" required>
+          <option value="">Select Ticket Type</option>
+          <option value="general">General Admission</option>
+          <option value="vip">VIP</option>
+          <option value="student">Student</option>
+        </select>
+      </div>
+      <button type="submit">Register and Purchase Ticket</button>
+    </form>
+  </div>
+<!-- HOME ICONS SECTION -->
+<div class="container">
+    <h2>Email Invitations</h2>
+    <form>
+      <div class="form-group">
+        <label for="sender-name">Your Name:</label>
+        <input type="text" id="sender-name" name="sender-name" required>
+      </div>
+      <div class="form-group">
+        <label for="sender-email">Your Email:</label>
+        <input type="email" id="sender-email" name="sender-email" required>
+      </div>
+      <div class="form-group">
+        <label for="recipient-email">Recipient's Email:</label>
+        <input type="email" id="recipient-email" name="recipient-email" required>
+      </div>
+      <div class="form-group">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" name="event-name" required>
+      </div>
+      <button type="submit">Send Invitation</button>
+    </form>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
